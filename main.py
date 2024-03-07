@@ -1,3 +1,45 @@
+"""
+This module provides functionality for transcribing audio files using the Whisper model. It is designed to be easily
+used as a script or imported into other Python projects for audio transcription tasks.
+
+The core of this module is the `process_audio_with_whisper` function, which takes an audio file path as input,
+transcribes the audio content using OpenAI's Whisper model, and saves the transcription to a text file.
+
+Features:
+- Transcription of audio files using the Whisper model.
+- Customizable output file path for transcriptions.
+- Logging of process steps and errors for easier debugging and tracking.
+
+Dependencies:
+- whisper: The module uses OpenAI's Whisper model for transcribing audio. Ensure you have whisper installed.
+- sys: Used for retrieving command-line arguments.
+- os: Used for file and path operations.
+- logging: Used for logging information and errors throughout the transcription process.
+
+Usage:
+As a script:
+    Run this module from the command line, providing the path to the audio file as the first argument
+    and optionally the path to the output text file as the second argument.
+    ```
+    python this_script.py path_to_audio_file [path_to_output_text_file]
+    ```
+    If the output file path is not specified, the transcription is saved in the same directory as the audio file
+    with the same base name and a `.txt` extension.
+
+As a module:
+    Import the `process_audio_with_whisper` function from this module into your Python code and call it with the
+    necessary arguments.
+    ```python
+    from this_module import process_audio_with_whisper
+    process_audio_with_whisper(audio_file_path, output_file_path=None)
+    ```
+
+This module is designed to be simple to use yet flexible, allowing for easy integration into larger projects
+or for use as a standalone script for quick audio transcription tasks.
+
+Note: This module requires the Whisper model. The model size can be specified when loading the model (the default is "base").
+Different model sizes ("tiny", "small", "medium", "large") offer trade-offs between speed and accuracy.
+"""
 
 
 import whisper
