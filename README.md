@@ -1,4 +1,4 @@
-# Whisper Audio Transcription
+# AI Audio Transcriber
 
 Welcome to the Whisper Audio Transcription repository! This project utilizes OpenAI's powerful Whisper model to transcribe audio files into text. It's designed to be user-friendly, allowing both developers and non-technical users to easily transcribe audio files with minimal setup.
 
@@ -20,8 +20,8 @@ Before you begin, ensure you have the following installed on your system:
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/whisper-audio-transcription.git
-cd whisper-audio-transcription
+git clone https://github.com/lamb-russell/audio-transcriber.git
+cd audio-transcriber
 ```
 
 2. **Install dependencies**
